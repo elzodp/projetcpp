@@ -1,0 +1,9 @@
+
+set(SRC_SOUCRES src/equation.cpp src/probleme.cpp src/ITimeDiscretization.cpp src)
+
+
+add_library(src  SHARED  ${SRC_SOURCES})
+
+
+install(TARGETS mylib LIBRARY DESTINATION lib
+ARCHIVE DESTINATION lib)
